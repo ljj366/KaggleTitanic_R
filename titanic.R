@@ -151,5 +151,5 @@ pred <- data.frame( rlt, lg=predict(fit.lg, test), lda=predict(fit.lda,test),knn
                     svm=predict(fit.svm,test),rf=predict(fit.rf,test) )
 apply(pred[,-(1:2)], 2, function(x) mean(x==pred[,2]))
 
-# both training and prediction results suggest rf, so report rf results
+# both training and prediction results suggest rf, so report rf results..
 write.csv( data.frame(PassengerId = pred$PassengerId,Survived=pred[,'rf']), file = "Titanic_pred.csv", row.names = FALSE)
