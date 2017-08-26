@@ -1,1 +1,1 @@
-xxxxxxxxxxxxxxxxxxx
+This file contains the R and Python codes for the Kaggle competition, Titanic Machine Learning from Disaster.
